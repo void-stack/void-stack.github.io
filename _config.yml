@@ -25,13 +25,6 @@ repository: void-stack/void-stack.github.io.
 
 # Build settings
 markdown: kramdown
-
-kramdown:
-input: GFM
-syntax_highlighter: rouge
-
-highlighter: rouge
-
 remote_theme: mmistakes/minimal-mistakes
 
 # Outputting
