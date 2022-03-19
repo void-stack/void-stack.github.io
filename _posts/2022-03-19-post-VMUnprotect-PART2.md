@@ -126,7 +126,7 @@ public static void InvokePostfix(object __instance, ref object __result, object 
 
 ## Current approach [VmProtectDumperUnsafeInvoke](https://github.com/void-stack/VMUnprotect/blob/main/VMUP/VMUnprotect.Runtime/Hooks/Methods/VmProtectDumperUnsafeInvoke.cs)
 
-Since we would be logging all functions called by the assembly, I've added an aditinal check to make sure the call is coming from VMProtect Call Handler.
+Since we would be logging all functions called by the assembly, I've added an additional check to make sure the call is coming from VMProtect Call Handler.
 
 ```csharp
 // Check if this invoke is coming from VMP Handler
