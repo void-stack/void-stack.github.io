@@ -23,6 +23,9 @@ minimal_mistakes_skin: neon
 search: true
 repository: void-stack/void-stack.github.io.
 
+sass:
+  style: compressed
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
