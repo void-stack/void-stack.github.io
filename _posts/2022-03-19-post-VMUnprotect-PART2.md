@@ -78,25 +78,26 @@ And this worked just fine, but it wasn't stable so I didn't bother with it and j
 ---
 
 How Harmony works
-Where other patch libraries simply allow you to replace the original method, Harmony goes one step further and gives you:
+
+Where other patch libraries simply allow you to replace the original method, `Harmony` goes one step further and gives you:
 - A way to keep the original method intact
 - Execute your code before and/or after the original method
 - Modify the original with IL code processors
 - Multiple Harmony patches co-exist and don't conflict with each other
   
-> `Prefix` - is a method that is executed before the original method. It is commonly used to:
+`Prefix` - is a method that is executed before the original method. It is commonly used to:
 - access and edit the arguments of the original method
 - set the result of the original method
 - skip the original method and prefixes that alter its input/result
 - set custom state that can be recalled in the postfix
 
-> `Postfix` is a method that is executed after the original method. It is commonly used to:
+`Postfix` is a method that is executed after the original method. It is commonly used to:
 - read or change the result of the original method
 - access the arguments of the original method
 - make sure your code is always executed
 - read custom state from the prefix
 
-> `Transpiler` is not a patch method that is executed at runtime when the Original method is called. Instead, you can see it more as a post-compiler stage that can alter the source code of the original method. Except that at runtime, it's not C# but IL code that you change.
+`Transpiler` is not a patch method that is executed at runtime when the Original method is called. Instead, you can see it more as a post-compiler stage that can alter the source code of the original method. Except that at runtime, it's not C# but IL code that you change.
 
 [Resources](https://harmony.pardeike.net/articles/intro.html)
 

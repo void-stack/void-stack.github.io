@@ -73,13 +73,18 @@ body {
   line-height: 1;
 
   a {
-    color: $text-color;
+    color: #e0e0e0 ;
     text-decoration: none;
   }
 
   & + .page__meta {
     margin-top: -0.5em;
   }
+}
+
+.highlight .c1 {
+  color: #65a056;
+  font-style: italic;
 }
 
 .page__lead {
@@ -91,6 +96,15 @@ body {
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+  }
+
+  h1::before, h2::before, h3::before {
+    content: "#";
+    color: #f21368;
+    font-weight: bold;
+    float: left;
+    margin-left: -26px;
+    position: absolute;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -119,6 +133,7 @@ body {
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
+    color: $gray;
 
     /* sibling indentation*/
     @if $paragraph-indent == true {
@@ -223,6 +238,10 @@ body {
   width: 100%;
   height: auto;
   -ms-interpolation-mode: bicubic;
+}
+
+.highlighter-rouge {
+  background: #352222;//#6c2727;
 }
 
 .page__hero-caption {

@@ -6,11 +6,11 @@
    Typography
    ========================================================================== */
 
-$doc-font-size: 12 !default;
+$doc-font-size: 10 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
-$indent-var: 1.3em !default;
+$indent-var: 0.75em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
@@ -55,11 +55,11 @@ $h-size-6: 1em !default; // ~16px
    Colors
    ========================================================================== */
 
-$gray: #7a8288 !default;
-$dark-gray: mix(#000, $gray, 50%) !default;
+$gray: #e0e0e0 !default;
+$dark-gray: #e0e0e0 !default;
 $darker-gray: mix(#000, $gray, 60%) !default;
 $light-gray: mix(#fff, $gray, 50%) !default;
-$lighter-gray: mix(#fff, $gray, 90%) !default;
+$lighter-gray: #141010 !default;
 
 $background-color: #fff !default;
 $code-background-color: #fafafa !default;

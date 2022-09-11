@@ -28,6 +28,11 @@ sass:
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  hard_wrap: true
+  input: GFM
+
 remote_theme: mmistakes/minimal-mistakes
 
 # Outputting
@@ -103,3 +108,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment
